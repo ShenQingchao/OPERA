@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<net name="Dropout" version="11">
+	<layers>
+		<layer id="0" name="y" type="Parameter" version="opset1">
+			<data shape="3,4,5" element_type="f32" />
+			<output>
+				<port id="0" precision="FP32" names="y">
+					<dim>3</dim>
+					<dim>4</dim>
+					<dim>5</dim>
+				</port>
+			</output>
+		</layer>
+		<layer id="1" name="y/sink_port_0" type="Result" version="opset1">
+			<input>
+				<port id="0" precision="FP32">
+					<dim>3</dim>
+					<dim>4</dim>
+					<dim>5</dim>
+				</port>
+			</input>
+		</layer>
+	</layers>
+	<edges>
+		<edge from-layer="0" from-port="0" to-layer="1" to-port="0" />
+	</edges>
+	<rt_info>
+		<Runtime_version value="2023.1.0-12185-9e6b00e51cd-releases/2023/1" />
+		<conversion_parameters>
+			<input_model value="DIR\dropout.onnx" />
+			<is_python_object value="False" />
+		</conversion_parameters>
+	</rt_info>
+</net>

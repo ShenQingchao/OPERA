@@ -1,0 +1,73 @@
+    def extract_parameters(graph):
+        input_names = []
+        input_shapes = []
+        input_dtypes = []
+        def parse_type(t):
+            if t.tensor_type.elem_type != 0: return t.tensor_type.elem_type
+            if t.sequence_type.elem_type.tensor_type.elem_type != 0: return parse_type(t.sequence_type.elem_type)
+            if t.optional_type.elem_type.tensor_type.elem_type != 0: return parse_type(t.optional_type.elem_type)
+            if t.optional_type.elem_type.sequence_type.elem_type.tensor_type.elem_type != 0: return parse_type(t.optional_type.elem_type.sequence_type.elem_type)
+            pass
+
+        for input in graph.input:
+            input_names.append(input.name)
+            input_shapes.append([d.dim_value for d in input.type.tensor_type.shape.dim])
+            input_dtypes.append(TensorProto.DataType.Name(parse_type(input.type)))
+        output_names = []
+        output_shapes = []
+        output_dtypes = []
+        for output in graph.output:
+            output_names.append(output.name)
+            output_shapes.append([d.dim_value for d in output.type.tensor_type.shape.dim])
+            output_dtypes.append(TensorProto.DataType.Name(parse_type(output.type)))
+        op_type = graph.node[0].op_type
+        attributes = {}
+        import onnx
+        for attr in graph.node[0].attribute:
+            if attr.type == AttributeProto.TENSOR:
+                attributes[attr.name] = str(onnx.numpy_helper.to_array(attr.t))
+            elif attr.type == AttributeProto.SPARSE_TENSOR:
+                attributes[attr.name] = str(onnx.helper.sparse_tensor.SparseTensorProtoToValues(attr.sparse_tensor))
+            elif attr.type == AttributeProto.GRAPH:
+                attributes[attr.name] = extract_parameters(attr.g)  # returns a string representation of the graph
+            elif attr.type == AttributeProto.TYPE_PROTO:
+                attributes[attr.name] = onnx.helper.printable_type(attr.tp)  # returns a string representation of the type
+            elif attr.type == AttributeProto.TENSORS:
+                attributes[attr.name] = [str(onnx.numpy_helper.to_array(t)) for t in attr.tensors]
+            elif attr.type == AttributeProto.SPARSE_TENSORS:
+                attributes[attr.name] = [str(onnx.helper.sparse_tensor.SparseTensorProtoToValues(st)) for st in attr.sparse_tensors]
+            elif attr.type == AttributeProto.GRAPHS:
+                attributes[attr.name] = [extract_parameters(g) for g in attr.graphs]  # returns a list of string representations of the graphs
+            elif attr.type == AttributeProto.TYPE_PROTOS:
+                attributes[attr.name] = [onnx.helper.printable_type(tp) for tp in attr.type_protos]  # returns a list of string representations of the types
+            else:
+                attributes[attr.name] = onnx.helper.get_attribute_value(attr)
+
+        params = {}
+        params['op_type'] = str(op_type)
+        params['input_name'] = tuple(input_names)
+        params['input_shape'] = tuple(input_shapes)
+        params['input_dtype'] = tuple(input_dtypes)
+        params['output_name'] = tuple(output_names)
+        params['output_shape'] = tuple(output_shapes)
+        params['output_dtype'] = tuple(output_dtypes)
+        params['kwargs'] = attributes
+        if str(op_type) == 'SequenceInsert':
+            print('debug', params)
+        if str(op_type) == 'Constant' and attributes['value']
+
+        function_call = "make_graph(op_type='{op_type}', kwargs={kwargs}, input_name={input_name}, input_shape={input_shape}, input_dtype={input_dtype}, output_name={output_name}, output_shape={output_shape}, output_dtype={output_dtype})".format(**params)
+        return function_call
+
+    function_call = extract_parameters(graph)
+    file_path = "onnx_migrated_tc.py"
+    import os
+    if os.path.exists(file_path):
+        with open(file_path, 'r') as file:
+            lines = file.readlines()
+            # Check if function_call already exists in the file
+            if any(function_call in line for line in lines):
+                return graph
+    # If function_call does not exist in the file, append it
+    with open(file_path, 'a') as file:
+        file.write(function_call + '\n')

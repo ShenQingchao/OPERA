@@ -1,0 +1,139 @@
+133	crash	BlackmanWindow	RuntimeError_/openvino/frontend/frontend.py_18_'stop' input is not a scalar
+134	crash	Constant	RuntimeError_/openvino/frontend/frontend.py_18_invalid attribute type
+135	crash	BlackmanWindow	RuntimeError_/openvino/frontend/frontend.py_18_'stop' input is not a scalar
+205	crash	Constant	RuntimeError_/openvino/runtime/utils/data_helpers/data_dispatcher.py_27_Port for tensor name X was not found.
+207	crash	Constant	RuntimeError_/openvino/runtime/utils/data_helpers/data_dispatcher.py_27_Port for tensor name x was not found.
+209	crash	Constant	RuntimeError_/openvino/runtime/utils/data_helpers/data_dispatcher.py_27_Port for tensor name x was not found.
+211	crash	Constant	RuntimeError_/openvino/runtime/utils/data_helpers/data_dispatcher.py_27_Port for tensor name x was not found.
+213	crash	Constant	RuntimeError_/openvino/runtime/utils/data_helpers/data_dispatcher.py_27_Port for tensor name x was not found.
+216	crash	Constant	RuntimeError_/openvino/runtime/utils/data_helpers/data_dispatcher.py_27_Port for tensor name x was not found.
+255	crash	ConstantOfShape	TypeError_/openvino/runtime/utils/data_helpers/data_dispatcher.py_39_Incompatible inputs of type: <class 'list'>
+274	wrong results	ConvTranspose	wrong results
+303	crash	Dropout	RuntimeError_/openvino/runtime/utils/data_helpers/data_dispatcher.py_27_Port for tensor name x was not found.
+305	crash	Dropout	RuntimeError_/openvino/runtime/utils/data_helpers/data_dispatcher.py_27_Port for tensor name x was not found.
+309	crash	Dropout	RuntimeError_/openvino/runtime/utils/data_helpers/data_dispatcher.py_27_Port for tensor name x was not found.
+321	crash	Constant	RuntimeError_/openvino/runtime/utils/data_helpers/data_dispatcher.py_27_Port for tensor name x was not found.
+323	crash	Constant	RuntimeError_/openvino/runtime/utils/data_helpers/data_dispatcher.py_27_Port for tensor name x was not found.
+325	crash	Constant	RuntimeError_/openvino/runtime/utils/data_helpers/data_dispatcher.py_27_Port for tensor name x was not found.
+388	crash	Constant	RuntimeError_/openvino/runtime/utils/data_helpers/data_dispatcher.py_27_Port for tensor name x was not found.
+390	crash	Constant	RuntimeError_/openvino/runtime/utils/data_helpers/data_dispatcher.py_27_Port for tensor name x was not found.
+395	crash	HammingWindow	RuntimeError_/openvino/frontend/frontend.py_18_'stop' input is not a scalar
+396	crash	Constant	RuntimeError_/openvino/frontend/frontend.py_18_invalid attribute type
+397	crash	HammingWindow	RuntimeError_/openvino/frontend/frontend.py_18_'stop' input is not a scalar
+398	crash	HannWindow	RuntimeError_/openvino/frontend/frontend.py_18_'stop' input is not a scalar
+399	crash	Constant	RuntimeError_/openvino/frontend/frontend.py_18_invalid attribute type
+400	crash	HannWindow	RuntimeError_/openvino/frontend/frontend.py_18_'stop' input is not a scalar
+409	crash	Constant	RuntimeError_/openvino/runtime/utils/data_helpers/data_dispatcher.py_27_Port for tensor name x was not found.
+411	crash	Constant	RuntimeError_/openvino/runtime/utils/data_helpers/data_dispatcher.py_27_Port for tensor name x was not found.
+413	crash	Constant	RuntimeError_/openvino/runtime/utils/data_helpers/data_dispatcher.py_27_Port for tensor name x was not found.
+463	crash	Constant	RuntimeError_/openvino/runtime/utils/data_helpers/data_dispatcher.py_27_Port for tensor name x was not found.
+465	crash	Constant	RuntimeError_/openvino/runtime/utils/data_helpers/data_dispatcher.py_27_Port for tensor name x was not found.
+467	crash	Constant	RuntimeError_/openvino/runtime/utils/data_helpers/data_dispatcher.py_27_Port for tensor name x was not found.
+477	crash	Constant	RuntimeError_/openvino/runtime/utils/data_helpers/data_dispatcher.py_27_Port for tensor name x was not found.
+479	crash	Constant	RuntimeError_/openvino/runtime/utils/data_helpers/data_dispatcher.py_27_Port for tensor name x was not found.
+481	crash	Constant	RuntimeError_/openvino/runtime/utils/data_helpers/data_dispatcher.py_27_Port for tensor name x was not found.
+483	crash	Constant	RuntimeError_/openvino/runtime/utils/data_helpers/data_dispatcher.py_27_Port for tensor name x was not found.
+485	crash	Constant	RuntimeError_/openvino/runtime/utils/data_helpers/data_dispatcher.py_27_Port for tensor name x was not found.
+487	crash	Constant	RuntimeError_/openvino/runtime/utils/data_helpers/data_dispatcher.py_27_Port for tensor name x was not found.
+532	wrong results	MaxPool	wrong results
+549	crash	Constant	RuntimeError_/openvino/frontend/frontend.py_18_invalid attribute type
+577	wrong results	Mod	wrong results
+589	crash	Constant	RuntimeError_/openvino/runtime/utils/data_helpers/data_dispatcher.py_27_Port for tensor name input was not found.
+591	crash	Constant	RuntimeError_/openvino/runtime/utils/data_helpers/data_dispatcher.py_27_Port for tensor name input was not found.
+593	crash	Constant	RuntimeError_/openvino/runtime/utils/data_helpers/data_dispatcher.py_27_Port for tensor name input was not found.
+596	crash	Constant	RuntimeError_/openvino/runtime/utils/data_helpers/data_dispatcher.py_27_Port for tensor name input was not found.
+598	crash	Constant	RuntimeError_/openvino/runtime/utils/data_helpers/data_dispatcher.py_27_Port for tensor name input was not found.
+603	crash	Constant	RuntimeError_/openvino/runtime/utils/data_helpers/data_dispatcher.py_27_Port for tensor name input was not found.
+605	crash	Constant	RuntimeError_/openvino/runtime/utils/data_helpers/data_dispatcher.py_27_Port for tensor name input was not found.
+609	crash	Constant	RuntimeError_/openvino/runtime/utils/data_helpers/data_dispatcher.py_27_Port for tensor name input was not found.
+611	crash	Constant	RuntimeError_/openvino/runtime/utils/data_helpers/data_dispatcher.py_27_Port for tensor name input was not found.
+613	crash	Constant	RuntimeError_/openvino/runtime/utils/data_helpers/data_dispatcher.py_27_Port for tensor name input was not found.
+615	crash	Constant	RuntimeError_/openvino/runtime/utils/data_helpers/data_dispatcher.py_27_Port for tensor name input was not found.
+617	crash	Constant	RuntimeError_/openvino/runtime/utils/data_helpers/data_dispatcher.py_27_Port for tensor name input was not found.
+646	crash	Pad	RuntimeError_/openvino/tools/ovc/moc_frontend/moc_emit_ir.py_18_Cannot get length of dynamic dimension
+647	crash	Pad	RuntimeError_/openvino/tools/ovc/moc_frontend/moc_emit_ir.py_18_Cannot get length of dynamic dimension
+648	crash	Pad	RuntimeError_/openvino/tools/ovc/moc_frontend/moc_emit_ir.py_18_Cannot get length of dynamic dimension
+650	crash	Pad	RuntimeError_/openvino/tools/ovc/moc_frontend/moc_emit_ir.py_18_Cannot get length of dynamic dimension
+664	crash	Constant	RuntimeError_/openvino/frontend/frontend.py_18_invalid attribute type
+666	crash	Constant	RuntimeError_/openvino/frontend/frontend.py_18_invalid attribute type
+674	crash	Range	RuntimeError_/openvino/frontend/frontend.py_18_'start' input is not a scalar
+680	crash	ReduceLogSum	RuntimeError_/openvino/runtime/utils/data_helpers/data_dispatcher.py_27_Port for tensor name axes was not found.
+682	crash	ReduceLogSum	RuntimeError_/openvino/runtime/utils/data_helpers/data_dispatcher.py_27_Port for tensor name axes was not found.
+684	crash	ReduceLogSum	RuntimeError_/openvino/runtime/utils/data_helpers/data_dispatcher.py_27_Port for tensor name axes was not found.
+685	crash	ReduceSum	RuntimeError_/openvino/runtime/utils/data_helpers/data_dispatcher.py_27_Port for tensor name axes was not found.
+686	crash	ReduceLogSum	RuntimeError_/openvino/runtime/utils/data_helpers/data_dispatcher.py_27_Port for tensor name axes was not found.
+688	crash	ReduceLogSumExp	RuntimeError_/openvino/runtime/utils/data_helpers/data_dispatcher.py_27_Port for tensor name axes was not found.
+690	crash	ReduceLogSumExp	RuntimeError_/openvino/runtime/utils/data_helpers/data_dispatcher.py_27_Port for tensor name axes was not found.
+692	crash	ReduceLogSumExp	RuntimeError_/openvino/runtime/utils/data_helpers/data_dispatcher.py_27_Port for tensor name axes was not found.
+694	crash	ReduceL1	RuntimeError_/openvino/runtime/utils/data_helpers/data_dispatcher.py_27_Port for tensor name axes was not found.
+696	crash	ReduceL1	RuntimeError_/openvino/runtime/utils/data_helpers/data_dispatcher.py_27_Port for tensor name axes was not found.
+698	crash	ReduceL1	RuntimeError_/openvino/runtime/utils/data_helpers/data_dispatcher.py_27_Port for tensor name axes was not found.
+700	crash	ReduceL2	RuntimeError_/openvino/runtime/utils/data_helpers/data_dispatcher.py_27_Port for tensor name axes was not found.
+702	crash	ReduceL2	RuntimeError_/openvino/runtime/utils/data_helpers/data_dispatcher.py_27_Port for tensor name axes was not found.
+704	crash	ReduceL2	RuntimeError_/openvino/runtime/utils/data_helpers/data_dispatcher.py_27_Port for tensor name axes was not found.
+706	crash	ReduceMax	RuntimeError_/openvino/runtime/utils/data_helpers/data_dispatcher.py_27_Port for tensor name axes was not found.
+707	crash	ReduceMax	RuntimeError_/openvino/runtime/utils/data_helpers/data_dispatcher.py_27_Port for tensor name axes was not found.
+709	crash	ReduceMean	RuntimeError_/openvino/runtime/utils/data_helpers/data_dispatcher.py_27_Port for tensor name axes was not found.
+710	crash	ReduceMean	RuntimeError_/openvino/runtime/utils/data_helpers/data_dispatcher.py_27_Port for tensor name axes was not found.
+711	crash	ReduceMean	RuntimeError_/openvino/runtime/utils/data_helpers/data_dispatcher.py_27_Port for tensor name axes was not found.
+712	crash	ReduceMin	RuntimeError_/openvino/runtime/utils/data_helpers/data_dispatcher.py_27_Port for tensor name axes was not found.
+713	crash	ReduceMin	RuntimeError_/openvino/runtime/utils/data_helpers/data_dispatcher.py_27_Port for tensor name axes was not found.
+715	crash	ReduceProd	RuntimeError_/openvino/runtime/utils/data_helpers/data_dispatcher.py_27_Port for tensor name axes was not found.
+716	crash	ReduceProd	RuntimeError_/openvino/runtime/utils/data_helpers/data_dispatcher.py_27_Port for tensor name axes was not found.
+720	crash	ReduceSum	RuntimeError_/openvino/runtime/utils/data_helpers/data_dispatcher.py_27_Port for tensor name axes was not found.
+721	crash	ReduceSum	RuntimeError_/openvino/runtime/utils/data_helpers/data_dispatcher.py_27_Port for tensor name axes was not found.
+722	crash	ReduceSumSquare	RuntimeError_/openvino/runtime/utils/data_helpers/data_dispatcher.py_27_Port for tensor name axes was not found.
+723	crash	ReduceSumSquare	RuntimeError_/openvino/runtime/utils/data_helpers/data_dispatcher.py_27_Port for tensor name axes was not found.
+725	crash	ReduceSumSquare	RuntimeError_/openvino/runtime/utils/data_helpers/data_dispatcher.py_27_Port for tensor name axes was not found.
+727	crash	Constant	RuntimeError_/openvino/frontend/frontend.py_18_invalid attribute type
+777	wrong results	ReverseSequence	wrong results
+778	wrong results	ReverseSequence	wrong results
+783	crash	RoiAlign	RuntimeError_/openvino/runtime/ie_api.py_143_ Demanded batch  doesn't exist
+784	crash	RoiAlign	RuntimeError_/openvino/runtime/ie_api.py_143_ Demanded batch  doesn't exist
+785	crash	RoiAlign	RuntimeError_/openvino/runtime/ie_api.py_143_ Demanded batch  doesn't exist
+805	crash	Constant	RuntimeError_/openvino/runtime/utils/data_helpers/data_dispatcher.py_27_Port for tensor name x was not found.
+826	wrong results	Shape	wrong results
+827	wrong results	Shape	wrong results
+828	wrong results	Shape	wrong results
+829	wrong results	Shape	wrong results
+830	wrong results	Shape	wrong results
+831	wrong results	Shape	wrong results
+835	crash	Constant	RuntimeError_/openvino/runtime/utils/data_helpers/data_dispatcher.py_27_Port for tensor name x was not found.
+858	wrong results	SoftmaxCrossEntropyLoss	wrong results
+859	crash	Constant	RuntimeError_/openvino/runtime/utils/data_helpers/data_dispatcher.py_27_Port for tensor name x was not found.
+860	wrong results	SoftmaxCrossEntropyLoss	wrong results
+862	wrong results	SoftmaxCrossEntropyLoss	wrong results
+863	crash	Constant	RuntimeError_/openvino/runtime/utils/data_helpers/data_dispatcher.py_27_Port for tensor name x was not found.
+864	wrong results	SoftmaxCrossEntropyLoss	wrong results
+866	wrong results	SoftmaxCrossEntropyLoss	wrong results
+867	crash	Constant	RuntimeError_/openvino/runtime/utils/data_helpers/data_dispatcher.py_27_Port for tensor name x was not found.
+868	wrong results	SoftmaxCrossEntropyLoss	wrong results
+870	wrong results	SoftmaxCrossEntropyLoss	wrong results
+871	wrong results	SoftmaxCrossEntropyLoss	wrong results
+872	wrong results	SoftmaxCrossEntropyLoss	wrong results
+873	crash	Constant	RuntimeError_/openvino/runtime/utils/data_helpers/data_dispatcher.py_27_Port for tensor name x was not found.
+874	wrong results	SoftmaxCrossEntropyLoss	wrong results
+876	wrong results	SoftmaxCrossEntropyLoss	wrong results
+877	crash	Constant	RuntimeError_/openvino/runtime/utils/data_helpers/data_dispatcher.py_27_Port for tensor name x was not found.
+878	wrong results	SoftmaxCrossEntropyLoss	wrong results
+885	crash	Constant	RuntimeError_/openvino/runtime/utils/data_helpers/data_dispatcher.py_27_Port for tensor name x was not found.
+891	crash	Constant	RuntimeError_/openvino/runtime/utils/data_helpers/data_dispatcher.py_27_Port for tensor name x was not found.
+895	crash	Constant	RuntimeError_/openvino/runtime/utils/data_helpers/data_dispatcher.py_27_Port for tensor name x was not found.
+899	crash	Constant	RuntimeError_/openvino/runtime/utils/data_helpers/data_dispatcher.py_27_Port for tensor name x was not found.
+902	wrong results	SoftmaxCrossEntropyLoss	wrong results
+903	crash	Constant	RuntimeError_/openvino/runtime/utils/data_helpers/data_dispatcher.py_27_Port for tensor name x was not found.
+904	wrong results	SoftmaxCrossEntropyLoss	wrong results
+907	crash	Constant	RuntimeError_/openvino/runtime/utils/data_helpers/data_dispatcher.py_27_Port for tensor name x was not found.
+911	crash	Constant	RuntimeError_/openvino/runtime/utils/data_helpers/data_dispatcher.py_27_Port for tensor name x was not found.
+919	crash	Constant	RuntimeError_/openvino/frontend/frontend.py_18_invalid attribute type
+921	crash	Constant	RuntimeError_/openvino/frontend/frontend.py_18_invalid attribute type
+934	crash	Split	RuntimeError_/openvino/frontend/frontend.py_18_Dimension of data input shape along 'axis': 7 must be evenly divisible by 'num_splits' attribute value: 4
+935	crash	Split	RuntimeError_/openvino/frontend/frontend.py_18_Dimension of data input shape along 'axis': 8 must be evenly divisible by 'num_splits' attribute value: 3
+965	crash	Constant	RuntimeError_/openvino/runtime/utils/data_helpers/data_dispatcher.py_27_Port for tensor name x was not found.
+981	crash	Trilu	RuntimeError_/openvino/frontend/frontend.py_18_Trilu second input must be a scalar
+983	crash	Trilu	RuntimeError_/openvino/frontend/frontend.py_18_Trilu second input must be a scalar
+984	crash	Trilu	RuntimeError_/openvino/frontend/frontend.py_18_Trilu second input must be a scalar
+985	crash	Trilu	RuntimeError_/openvino/frontend/frontend.py_18_Trilu second input must be a scalar
+987	crash	Trilu	RuntimeError_/openvino/frontend/frontend.py_18_Trilu second input must be a scalar
+989	crash	Trilu	RuntimeError_/openvino/frontend/frontend.py_18_Trilu second input must be a scalar
+991	crash	Trilu	RuntimeError_/openvino/frontend/frontend.py_18_Trilu second input must be a scalar0	wrong results	Mod	wrong results

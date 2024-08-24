@@ -1,0 +1,6 @@
+[run]
+branch = False
+source = /workplace/software/tvm/tvm/python/tvm
+
+[report]
+show_missing = False
