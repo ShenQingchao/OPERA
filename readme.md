@@ -1,6 +1,6 @@
 ## A Tale of Two DL Cities: When Library Tests Meet Compiler
 
-This repository provides the tool (i.e., OPERA) and all experimental data for an empirical study about a test migration-based idea. OPERA is a test-migration-based technique to improve the testing of the model loading stage of DL compilers. It considers different sources of test inputs in DL libraries for migration. Also, it designs a diversity-based test prioritization strategy to migrate and execute those test inputs that are more likely to detect diverse bugs in the model loading stage, to improve the testing efficiency.
+This repository provides the tool (i.e., OPERA) and all experimental data for an empirical study about a test migration-based idea. OPERA is a test-migration-based technique to improve the testing of the model loading stage of DL compilers. It considers different sources of tests in DL libraries for migration. Also, it designs a diversity-based test prioritization strategy to migrate and execute those tests that are more likely to detect diverse bugs in the model loading stage, to improve the testing efficiency.
 
 
 ### Reproducibility
@@ -9,10 +9,10 @@ This repository provides the tool (i.e., OPERA) and all experimental data for an
 For each model format (i.e., PyTorch, Keras, and ONNX), we set up a directory in the root directory.
 Each project directory includes the following items:
 
-* **migrate**: It includes the source code for collected test inputs from DL libraries and converts them into DL models for testing DL compilers.
-* **data**: the collected test inputs from DL libraries and equipped test inputs from DL compilers for test prioritization
-* **TCP**: the test prioritization strategy of OPERA for ranking all migrated test inputs
-* **fuzz**: script for running the collected test inputs to detect bugs in DL compilers
+* **migrate**: It includes the source code for collected tests from DL libraries and converts them into DL models for testing DL compilers.
+* **data**: the collected tests from DL libraries and equipped tests from DL compilers for test prioritization
+* **TCP**: the test prioritization strategy of OPERA for ranking all migrated tests
+* **fuzz**: script for running the collected tests to detect bugs in DL compilers
 
 
 ####  1. Build Environment
@@ -34,16 +34,16 @@ Each project directory includes the following items:
      `pip install tensorrt==8.6`
 
 
-#### 2. Migrate the test inputs
+#### 2. Migrate the tests
 > instruments of each operator API in the source code of DL compilers for operator instance extraction.
 ###### Steps:
   1) execute all test suites equipped by the three DL libraries and the DocTer fuzzing under the instrumented DL libraries. Detailed instrumentation steps are shown in the `readme.md` file of each subproject.
   2) save the operator instance and wrap them into DL models automatically in the designed instrumented code,
-  3) The extracted test inputs were saved in the path library_name/data (e.g., keras/data)
+  3) The extracted tests were saved in the path library_name/data (e.g., keras/data)
 
 
 ####  3. Run Test Prioritization
-Execute the prioritization to rank all migrated test inputs.
+Execute the prioritization to rank all migrated tests.
 ```
 python run_tcp.py
 ```
@@ -61,7 +61,7 @@ python run_fuzz.py ../data/original_migrated_onnx_tc.py SUT_name dllibrary_name
 
 ### 5. Supplement Results
 
-You can visit the [supplement_results.md](.supplement_results) file to see the supplement information about our paper.
+You can visit the [supplement_results.md](./supplement_results) file to see the supplement information about our paper.
 
 ### Bug Details
 
