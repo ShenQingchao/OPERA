@@ -61,7 +61,7 @@ python run_fuzz.py ../data/original_migrated_onnx_tc.py SUT_name dllibrary_name
 
 ### 5. Supplement Results
 
-You can visit the [supplement_results.md](./supplement_results) file to see the supplement information about our paper.
+You can visit the [supplement_results.md](./supplement_results.md) file to see the supplement information about our paper.
 
 ### 6. Bug Details
 
