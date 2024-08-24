@@ -63,7 +63,23 @@ python run_fuzz.py ../data/original_migrated_onnx_tc.py SUT_name dllibrary_name
 
 You can visit the [supplement_results.md](./supplement_results) file to see the supplement information about our paper.
 
-### Bug Details
+### 6. Bug Details
 
 > This work has detected 170 previously unknown bugs, 90 of which have been confirmed/fixed by developers.
 
+
+
+
+
+### Citation
+
+Please cite our paper if this work is useful for you.
+
+```
+@article{shen2024tale,
+  title={A Tale of Two DL Cities: When Library Tests Meet Compiler},
+  author={Shen, Qingchao and Tian, Yongqiang and Ma, Haoyang and Chen, Junjie and Huang, Lili and Fu, Ruifeng and Cheung, Shing-Chi and Wang, Zan},
+  journal={arXiv preprint arXiv:2407.16626},
+  year={2024}
+}
+```
