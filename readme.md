@@ -1,7 +1,6 @@
-## A Tale of Two DL Cities: When Library Tests Meet Compiler
+## OPERA
 
-This repository provides the tool (i.e., OPERA) and all experimental data for an empirical study about a test migration-based idea. OPERA is a test-migration-based technique to improve the testing of the model loading stage of DL compilers. It considers different sources of tests in DL libraries for migration. Also, it designs a diversity-based test prioritization strategy to migrate and execute those tests that are more likely to detect diverse bugs in the model loading stage, to improve the testing efficiency.
-
+This repository provides the tool (i.e., OPERA) and all experimental data for our work: "A Tale of Two DL Cities: When Library Tests Meet Compiler", which has been accepted by ICSE2025 . OPERA is a test-migration-based technique to improve the testing of the model loading stage of DL compilers. It considers different sources of tests in DL libraries for migration. Also, it designs a diversity-based test prioritization strategy to migrate and execute those tests that are more likely to detect diverse bugs in the model loading stage, to improve the testing efficiency.
 
 ### Reproducibility
 
