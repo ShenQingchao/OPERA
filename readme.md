@@ -1,10 +1,15 @@
+
+
 ## OPERA
 
-This repository provides the tool (i.e., OPERA) and all experimental data for our work: "A Tale of Two DL Cities: When Library Tests Meet Compiler", which has been accepted by ICSE2025 . OPERA is a test-migration-based technique to improve the testing of the model loading stage of DL compilers. It considers different sources of tests in DL libraries for migration. Also, it designs a diversity-based test prioritization strategy to migrate and execute those tests that are more likely to detect diverse bugs in the model loading stage, to improve the testing efficiency.
+<a href="https://arxiv.org/pdf/2407.16626"><img src="https://img.shields.io/badge/Paper-ICSE'25-a5fed.svg"></a>  <a href="https://arxiv.org/pdf/2407.16626"><img src="https://img.shields.io/badge/License-Apache2.0-a5fed.svg"></a> 
+
+This repository provides the tool (i.e., OPERA) and all experimental data for our work: "A Tale of Two DL Cities: When Library Tests Meet Compiler", which has been accepted by ICSE'2025 . OPERA is a test-migration-based technique to improve the testing of the model loading stage of DL compilers. It considers different sources of tests in DL libraries for migration. Also, it designs a diversity-based test prioritization strategy to migrate and execute those tests that are more likely to detect diverse bugs in the model loading stage, to improve the testing efficiency.
 
 ### Reproducibility
 
 #### 0. File Structure
+
 For each model format (i.e., PyTorch, Keras, and ONNX), we set up a directory in the root directory.
 Each project directory includes the following items:
 
@@ -62,11 +67,9 @@ python run_fuzz.py ../data/original_migrated_onnx_tc.py SUT_name dllibrary_name
 
 You can visit the [supplement_results.md](./supplement_results.md) file to see the supplement information about our paper.
 
-### 6. Bug Details
+### 6. [Bug Details](./bugs.md) 
 
-> This work has detected 170 previously unknown bugs, 90 of which have been confirmed/fixed by developers.
-
-
+This work has detected **170** previously unknown bugs, **more than 100** of which have been confirmed/fixed by developers. The detail information can be found in the [bugs.md file](./bugs.md). 
 
 
 
