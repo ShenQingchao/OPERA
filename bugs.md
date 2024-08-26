@@ -1,6 +1,6 @@
 # Bugs Detected by OPERA
 
- ![image-20240826130529640](D:\code\img\bugs\image-20240826130529640.png) We provided the confirmed/Fixed bugs detected by OPERA in the following tables. As of the statistical time, a total of 102 bugs have been confirmed or fixed. 
+We provided the confirmed/Fixed bugs detected by OPERA in the following tables. As of the statistical time, a total of 102 bugs have been confirmed or fixed. 
 
 | SUT      | #Bugs | Frontend | Symptom       | Link                                                         |
 | -------- | ----- | -------- | ------------- | ------------------------------------------------------------ |
